@@ -20,12 +20,12 @@
         </div>
         <div class="row">  
             <!-- accountent img part -->
-            <div class="col-12 col-md-7 col-lg-7">
+            <div class="col-12 col-md-12 col-lg-7">
                 <img class="img-fluid accountent" src="img/accountent.jpg" alt="">
             </div>
-            <!-- calculation form part  -->
-            <div class="col-12 col-md-5 col-lg-5 calculation-part">
-                <form action="">
+            <!-- calculation  part  -->
+            <div class="col-12 col-md-12 col-lg-5 calculation-part">
+                <div>
                     <!-- income part  -->
                     <div>
                         <h6 class="text-center fw-bold mb-3">Monthly Income</h6>
@@ -49,11 +49,11 @@
                           <p class="text-bold "> Clothes:</p> 
                           <input class="" id="clothes-input" placeholder="0" type="text">
                         </div>
-                        <div class="text-center"><button class="mt-2 mb-3 text-center">Calculate</button></div>
+                        <div class="text-center"><button id="calculate-btn" class="mt-2 mb-3 text-center">Calculate</button></div>
 
                         <!-- total amount part  -->
-                        <h6 class="text-center fw-bold my-2">Total Expense: <span>00</span></h6>
-                        <h6 class="text-center fw-bold mb-4">Balence: <span>00</span></h6>
+                        <h6 class="text-center fw-bold my-2">Total Expense: <span id="total-expense">00</span></h6>
+                        <h6 class="text-center fw-bold mb-4">Balance: <span id="balance">00</span></h6>
   
                         <!-- saving part  -->
                         <div class="d-flex justify-content-between my-2">
@@ -62,10 +62,10 @@
                             <p class="fw-bold pt-1">%</p>
                             <button id="saving-btn">Save</button>
                         </div>
-                        <h6 class="text-center fw-bold">Saving Amount: <span>00</span></h6>
-                        <h6 class="text-center fw-bold">Remaining Balence: <span>00</span></h6>
+                        <h6 class="text-center fw-bold">Saving Amount: <span id="saving-amount">00</span></h6>
+                        <h6 class="text-center fw-bold">Remaining Balance: <span id="remaining-balance">00</span></h6>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>
