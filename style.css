@@ -1,0 +1,54 @@
+body { 
+   background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.cash-flow{
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px 40px 25px 40px;
+    border: 2px solid #858299;
+    border-radius: 5px;
+}
+.heading{
+    color: rgb(3, 83, 83);
+}
+
+.accountent{
+    height: 500px;
+    width: 550px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.calculation-part{
+    background-color: #F8F8F8;
+    padding: 20px;
+}
+
+button{
+    padding: 5px 20px;
+    border: 1px solid white;
+    font-weight: 800;
+    border-radius: 5px;
+    background-color: rgb(15, 243, 205);  
+}
+#saving-btn{
+    padding: 4px 20px; 
+    height: 33px;
+ }
+input{
+    width: 120px;
+    height: 30px;
+    border: 2px solid #858299;
+    border-radius: 5px;
+}
+#saving-input{
+    width: 60px;
+}
+p{
+    font-size: 16px;
+    font-weight: 600;
+}
