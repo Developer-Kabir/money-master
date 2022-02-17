@@ -27,16 +27,18 @@ body {
 }
 
 .calculation-part{
-    background-color: #F8F8F8;
-    padding: 20px;
+    background-color: #d8d6d6;
+    padding: 20px 20px 3px 20px;
+    border: 1px solid #d8d6d6;
+    border-radius: 5px;
 }
 
 button{
     padding: 5px 20px;
-    border: 1px solid white;
+    border: 1px solid #d8d6d6;
     font-weight: 800;
     border-radius: 5px;
-    background-color: rgb(15, 243, 205);  
+    background-color: rgb(5, 184, 109);  
 }
 
 #saving-btn{
@@ -58,4 +60,20 @@ input{
 p{
     font-size: 16px;
     font-weight: 600;
+}
+/* media query for responsive very small device  */
+@media only screen and (max-width: 480px)  {
+    .cash-flow{
+        width: 80%;
+    }   
+   }
+@media only screen and (max-width: 420px)  {
+ .cash-flow{
+     width: 90%;
+ }   
+}
+@media only screen and (max-width: 320px)  {
+ .cash-flow{
+     width: 98%;
+ }   
 }

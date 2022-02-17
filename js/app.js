@@ -9,22 +9,22 @@ function calculateIncome (){
 
 // food cost string to number conversion 
 function calculateFoodCost (){
-    const foodInput = document.getElementById("food-input");
-    const foodCostValue = parseInt(foodInput.value) ;
+    const foodCostInput = document.getElementById("food-input");
+    const foodCostValue = parseInt(foodCostInput.value) ;
     return foodCostValue;
 }
 
 // rent cost string to number conversion 
 function calculateRent(){
-    const rentInput = document.getElementById("rent-input");
-    const rentCostValue = parseInt(rentInput.value) ;
+    const rentCostInput = document.getElementById("rent-input");
+    const rentCostValue = parseInt(rentCostInput.value) ;
     return rentCostValue;
 }
 
 // iclothes cost string to number conversion 
 function calculateClothesCost(){
-    const clothesInput = document.getElementById("clothes-input");
-    const clothesCostValue = parseInt(clothesInput.value);
+    const clothesCostInput = document.getElementById("clothes-input");
+    const clothesCostValue = parseInt(clothesCostInput.value);
     return clothesCostValue;
 }
 
@@ -37,7 +37,6 @@ function calculateSavingratio(){
 
 // total expense calculation
 function totalExpenseCalculation (){
-    const income = calculateIncome();
     const foodCost = calculateFoodCost();
     const rentCost = calculateRent();
     const clothesCost = calculateClothesCost();
@@ -59,10 +58,10 @@ function balanceCalculation(){
 
 
      if (income < 0 || foodCost < 0 || rentCost < 0 || clothesCost < 0 ){
-        window.alert("Please input positive value");
+        window.alert("Negative value is not accepted .Please input positive value");
     }
     else if( isNaN(income) || isNaN(foodCost) || isNaN(rentCost) || isNaN(clothesCost)){
-        window.alert("Sting value and empty value is not accepetable Please input minimum 0 or more");
+        window.alert("Sting value and empty value is not acceptable Please input minimum 0 or more");
     }
     else {
         if ( totalCost > income ){
