@@ -65,7 +65,7 @@ function balanceCalculation(){
     }
     else {
         if ( totalCost > income ){
-            window.alert("You can not expense more than of your income. Please decrease your cost");
+            window.alert("You can not spend more than of your income. Please decrease your cost");
         }
         else {
             let totalExpense =  document.getElementById("total-expense");
@@ -91,19 +91,25 @@ function remainingBalenceCalculation(){
         window.alert("Please Input Positive value or more than zero for saving. Negative value and zero is not accepted for saving ratio")
     }
     else if ( isNaN(savingRatio)){
-        window.alert("String value is not accepetable Please input number value");
+        window.alert("String or empty value is not accepetable Please input number value");
     }
     else{
         if ( savingAmount > balance){
             window.alert("You can not save more than of your balence")
         }
-        else{
+        else if ( isNaN(income)){
+            window.alert("Hey!! You have no income. You can not save without income")
+        }
+        else if ( totalCost > 0){
             const savingAmountText = document.getElementById("saving-amount");
             savingAmountText.innerText = savingAmount ;
 
             const remainingBalence = balance - savingAmount ;
             const remainingBalenceText = document.getElementById("remaining-balance");
             remainingBalenceText.innerText = remainingBalence;
+        }
+        else{
+            window.alert("You can save after deduct your monthly cost from your income. Input your cost than calculate again")
         }
     }
 }
