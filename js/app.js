@@ -61,7 +61,7 @@ function balanceCalculation(){
         window.alert("Negative value is not accepted .Please input positive value");
     }
     else if( isNaN(income) || isNaN(foodCost) || isNaN(rentCost) || isNaN(clothesCost)){
-        window.alert("Sting value and empty value is not acceptable Please input minimum 0 or more");
+        window.alert("String value and empty value is not acceptable Please input minimum 0 or more");
     }
     else {
         if ( totalCost > income ){
@@ -91,7 +91,7 @@ function remainingBalenceCalculation(){
         window.alert("Please Input Positive value or more than zero for saving. Negative value and zero is not accepted for saving ratio")
     }
     else if ( isNaN(savingRatio)){
-        window.alert("Sting value is not accepetable Please input number value");
+        window.alert("String value is not accepetable Please input number value");
     }
     else{
         if ( savingAmount > balance){
